@@ -13,5 +13,5 @@ template = env.get_template('template.html')
 html_output = template.render(entries=bib_database.entries)
 
 # 결과를 HTML 파일로 저장합니다.
-with open('index.html', 'w') as html_file:
+with open('ref.html', 'w') as html_file:
     html_file.write(html_output)
