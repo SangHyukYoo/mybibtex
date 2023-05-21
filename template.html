@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bibliography</title>
+</head>
+<body>
+    <h1>Bibliography</h1>
+    {% for entry in entries %}
+    <div>
+        <h2>{{ entry.title }}</h2>
+        <p>{{ entry.author }}</p>
+        <p>{{ entry.year }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
